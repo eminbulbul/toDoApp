@@ -7,3 +7,59 @@
 body {
     background-color: #020631;
 }
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 7rem;
+    margin: 10%;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 5%;
+}
+
+#todo {
+    background-color: white;
+    border-radius: 0.5rem;
+    width: 19.5rem;
+}
+
+#todotext {
+    margin-left: 0.5rem;
+    border-radius: 0.5rem;
+    width: 17rem;
+    height: 2rem;
+    border: none;
+}
+
+#todotext:focus {
+    outline: none;
+}
+
+#todobutton {
+    background-color: white;
+    border: none;
+    margin-right: 0.5rem;
+}
+
+#todobutton:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#thanks {
+    color: #2C2C33;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+#thanksto {
+    color: #265C94;
+}
