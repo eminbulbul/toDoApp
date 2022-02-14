@@ -10,16 +10,20 @@ let toButton = document.getElementById("todobutton");
 let toDo = document.getElementById("lists");
 
 toButton.addEventListener("click", () => {
-    let addList = `<input type="checkbox" name="ch" id="ch">
-    <label id="textlabel" style="color: white;" for="ch">${toText.value}</label> <br>`;
+  let addList = `
+  <style>
+  input[type=checkbox]:checked + label#textlabel{
+      text-decoration: line-through;
+  }
 
-    toDo.innerHTML += addList;
 
-    let textL = document.getElementById("textlabel");
+</style>
 
-    let checkBoxT = document.getElementById("ch");
+<input type="checkbox" name="ch" id="ch" />
+<label id="textlabel" style="color: white" for="ch"
+  >${toText.value}</label
+>
+<br />`;
 
-    checkBoxT.addEventListener("click", () => {
-        textL.innerText.style.textDecoration = "line-through";
-    });
+  toDo.innerHTML += addList;
 });
