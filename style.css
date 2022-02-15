@@ -74,7 +74,7 @@ h1 {
     display: flex;
     align-items: center;
     width:19rem;
-    height: 1.5rem;
+    height: 2rem;
     transition: 0.5s;
     
 }
@@ -89,6 +89,7 @@ h1 {
 
 label{
     padding-left: 0.5rem;
+    overflow-x: auto;
 }
 input[type=checkbox]:checked + label{
 text-decoration: line-through;
