@@ -18,7 +18,7 @@ body {
 
 #logo {
     width: 7rem;
-    margin: 10%;
+    margin: 5%;
 }
 
 h1 {
@@ -38,6 +38,7 @@ h1 {
     width: 17rem;
     height: 2rem;
     border: none;
+    
 }
 
 #todotext:focus {
@@ -51,8 +52,9 @@ h1 {
 }
 
 #todobutton:hover {
-    opacity: 0.6;
+    opacity: 0.5;
     cursor: pointer;
+    
 }
 
 #thanks {
@@ -65,4 +67,30 @@ h1 {
     color: #265C94;
 }
 
-#lists {}
+#list__div{
+    background-color: white;
+    margin-top: 0.2rem;
+    border-radius: 0.2rem;
+    display: flex;
+    align-items: center;
+    width:19rem;
+    height: 1.5rem;
+    transition: 0.5s;
+    
+}
+#close{
+    color: coral;
+    padding-left: 3rem;
+}
+#close:hover{
+    color: red;
+    cursor: pointer;
+}
+
+label{
+    padding-left: 0.3rem;
+}
+input[type=checkbox]:checked + label{
+text-decoration: line-through;
+
+}
