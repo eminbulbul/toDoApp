@@ -9,7 +9,6 @@ let toButton = document.getElementById("todobutton");
 
 let toDo = document.getElementById("lists");
 
-
 toButton.addEventListener("click", () => {
 
 //in this section we created new div id list__div (id for css)
@@ -24,7 +23,7 @@ checkBox.id = 'list_box';
 let label = document.createElement("label");
 label.htmlFor = 'list_box';
 
-//in this section we create cros for close 
+//in this section we create cross for close 
 let close = document.createElement("close")
 close.innerHTML = '<span id="close">  ✖</span>'
 
@@ -49,13 +48,11 @@ close.addEventListener('click',()=>{
 
 checkBox.addEventListener('change',()=>{
   if (checkBox.checked) {
-    listDiv.style.backgroundColor = 'blueviolet'
-    
+    listDiv.style.backgroundColor = 'blueviolet'   
   }else{
-    
     listDiv.style.backgroundColor = 'white'
   }
- 
+
 });
 
 });

@@ -88,9 +88,12 @@ h1 {
 }
 
 label{
-    padding-left: 0.3rem;
+    padding-left: 0.5rem;
 }
 input[type=checkbox]:checked + label{
 text-decoration: line-through;
 
+}
+input{
+    margin-left: 0.3rem;
 }
