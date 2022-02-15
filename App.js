@@ -11,6 +11,11 @@ let toDo = document.getElementById("lists");
 
 toButton.addEventListener("click", () => {
 
+    if(toText.value == ""){
+        alert("warning, you added empty list ..!!");
+    } 
+
+
 //in this section we created new div id list__div (id for css)
 let listDiv = document.createElement("div");
 listDiv.id = 'list__div';
