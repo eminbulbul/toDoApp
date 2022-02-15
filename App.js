@@ -26,7 +26,7 @@ checkBox.type = 'checkbox';
 checkBox.id = 'list_box';
 
 let label = document.createElement("label");
-label.htmlFor = 'list_box';
+// label.htmlFor = 'list_box'; this  for attribute label commented beceuse of bugs.
 
 //in this section we create cross for close 
 let close = document.createElement("close")

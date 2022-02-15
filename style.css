@@ -39,6 +39,8 @@ h1 {
     height: 2rem;
     border: none;
     
+    
+    
 }
 
 #todotext:focus {
@@ -59,7 +61,7 @@ h1 {
 
 #thanks {
     color: #2C2C33;
-    margin-top: 4rem;
+    margin-top: 15rem;
     text-align: center;
 }
 
@@ -70,17 +72,17 @@ h1 {
 #list__div{
     background-color: white;
     margin-top: 0.2rem;
-    border-radius: 0.3rem;
+    border-radius: 0.5rem;
     display: flex;
     align-items: center;
-    width:19rem;
+    width:19.5rem;
     height: 2rem;
     transition: 0.5s;
     
 }
 #close{
     color: coral;
-    padding-left: 3rem;
+    padding-left: 4.6rem;
 }
 #close:hover{
     color: red;
@@ -89,7 +91,10 @@ h1 {
 
 label{
     padding-left: 0.5rem;
-    overflow: scroll;
+    
+    font-size: 0.9rem;
+    overflow-x: auto;
+    
     
 }
 input[type=checkbox]:checked + label{
