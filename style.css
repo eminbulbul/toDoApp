@@ -89,7 +89,8 @@ h1 {
 
 label{
     padding-left: 0.5rem;
-    overflow-x: auto;
+    overflow: scroll;
+    
 }
 input[type=checkbox]:checked + label{
 text-decoration: line-through;
