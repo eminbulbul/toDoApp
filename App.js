@@ -9,17 +9,32 @@ let toButton = document.getElementById("todobutton");
 
 let toDo = document.getElementById("lists");
 
+
 toButton.addEventListener("click", () => {
-    let addList = `<input type="checkbox" name="ch" id="ch">
-    <label id="textlabel" style="color: white;" for="ch">${toText.value}</label> <br>`;
+//in this section we created new div id list__div (id for css)
+let listDiv = document.createElement("div");
+listDiv.id = 'list__div';
 
-    toDo.innerHTML += addList;
+// in this section we created checkbox and label 
+let checkBox = document.createElement("input");
+checkBox.type = 'checkbox';
+checkBox.id = 'list_box';
 
-    let textL = document.getElementById("textlabel");
+let label = document.createElement("label");
+label.htmlFor = 'list_box';
 
-    let checkBoxT = document.getElementById("ch");
+// in this section we assign value in label
+label.innerText = toText.value;
 
-    checkBoxT.addEventListener("click", () => {
-        textL.innerText.style.textDecoration = "line-through";
-    });
+// in this section we append checkbox and label in the list__div 
+listDiv.appendChild(checkBox);
+listDiv.appendChild(label);
+
+//in this section we append list__div to toDo(lists)
+
+toDo.appendChild(listDiv);
+// in this section we clear the input text area
+toText.value='';
+
+
 });
